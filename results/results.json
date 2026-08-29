@@ -1,0 +1,160 @@
+{
+  "generatedAt": "2026-08-29T02:59:11.843Z",
+  "tests": {
+    "total": 24,
+    "asserts": 980,
+    "failures": []
+  },
+  "perSuite": [
+    {
+      "suite": "filters",
+      "tests": 7,
+      "asserts": 912
+    },
+    {
+      "suite": "regions",
+      "tests": 5,
+      "asserts": 27
+    },
+    {
+      "suite": "hough",
+      "tests": 4,
+      "asserts": 19
+    },
+    {
+      "suite": "detect",
+      "tests": 8,
+      "asserts": 22
+    }
+  ],
+  "evidence": {
+    "separableMaxDelta": 5.960464477539063e-8,
+    "houghSyntheticMaxErrorDeg": 0,
+    "emptyScenes": {
+      "frames": 40,
+      "falsePositives": 1
+    },
+    "heldOut": {
+      "frames": 200,
+      "tp": 158,
+      "fp": 4,
+      "fn": 6,
+      "tn": 35,
+      "precision": 0.9753,
+      "recall": 0.9634,
+      "f1": 0.9693,
+      "meanIoU": 0.95,
+      "minIoU": 0
+    },
+    "pocketLocalisation": {
+      "pockets": 92,
+      "matched": 88,
+      "rate": 0.9565
+    },
+    "tilt": {
+      "frames": 95,
+      "meanAbsErrorDeg": 0.29,
+      "medianAbsErrorDeg": 0.271,
+      "p90AbsErrorDeg": 0.542
+    },
+    "noiseSweep": [
+      {
+        "noise": 0.02,
+        "f1": 0.9545,
+        "precision": 0.9692,
+        "recall": 0.9403,
+        "meanIoU": 0.9561
+      },
+      {
+        "noise": 0.05,
+        "f1": 0.9394,
+        "precision": 0.9538,
+        "recall": 0.9254,
+        "meanIoU": 0.9413
+      },
+      {
+        "noise": 0.09,
+        "f1": 0.9394,
+        "precision": 0.9538,
+        "recall": 0.9254,
+        "meanIoU": 0.9413
+      },
+      {
+        "noise": 0.14,
+        "f1": 0.9545,
+        "precision": 0.9692,
+        "recall": 0.9403,
+        "meanIoU": 0.9564
+      },
+      {
+        "noise": 0.2,
+        "f1": 0.9545,
+        "precision": 0.9692,
+        "recall": 0.9403,
+        "meanIoU": 0.9553
+      },
+      {
+        "noise": 0.3,
+        "f1": 0.9538,
+        "precision": 0.9841,
+        "recall": 0.9254,
+        "meanIoU": 0.9541
+      },
+      {
+        "noise": 0.45,
+        "f1": 0.8448,
+        "precision": 1,
+        "recall": 0.7313,
+        "meanIoU": 0.9584
+      }
+    ],
+    "highTilt": {
+      "frames": 60,
+      "tp": 22,
+      "fp": 1,
+      "fn": 22,
+      "tn": 16,
+      "precision": 0.9565,
+      "recall": 0.5,
+      "f1": 0.6567,
+      "meanIoU": 0.9307,
+      "minIoU": 0.1585
+    }
+  },
+  "bench": {
+    "frameSize": "320x240",
+    "endToEnd": {
+      "frames": 120,
+      "ms": 860.2,
+      "fps": 139.5,
+      "msPerFrame": 7.168,
+      "megapixelsPerSec": 10.71,
+      "detected": 94
+    },
+    "stages": {
+      "reps": 60,
+      "gaussianBlur_ms": 1.98,
+      "adaptiveThreshold_ms": 0.418,
+      "connectedComponents_ms": 0.253,
+      "canny_ms": 5.278
+    },
+    "accuracy": {
+      "frames": 200,
+      "tp": 158,
+      "fp": 4,
+      "fn": 6,
+      "tn": 35,
+      "precision": 0.9753,
+      "recall": 0.9634,
+      "f1": 0.9693,
+      "meanIoU": 0.95,
+      "minIoU": 0
+    },
+    "accuracyStrictIoU": {
+      "threshold": 0.75,
+      "precision": 0.9753,
+      "recall": 0.9634,
+      "f1": 0.9693
+    }
+  }
+}
