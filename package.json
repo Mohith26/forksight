@@ -1,0 +1,12 @@
+{
+  "name": "forksight",
+  "version": "1.0.0",
+  "description": "Pallet fork pocket detection from first principles, no vision library",
+  "main": "src/detect.js",
+  "scripts": {
+    "test": "node test/run-all.js",
+    "bench": "node bench/bench.js"
+  },
+  "license": "MIT",
+  "private": false
+}
